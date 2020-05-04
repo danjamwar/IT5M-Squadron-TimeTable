@@ -14,8 +14,10 @@ import android.support.v4.app.NotificationCompat;
 
 import com.ulan.timetable.activities.MainActivity;
 import com.ulan.timetable.R;
+import com.ulan.timetable.model.Week;
 
 import java.util.Calendar;
+import java.util.function.Consumer;
 
 /**
  * Created by Ulan on 28.01.2019.
@@ -65,17 +67,20 @@ public class DailyReceiver extends BroadcastReceiver {
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     private String getLessons(int day) {
-        StringBuilder lessons = new StringBuilder("");
+        final StringBuilder lessons = new StringBuilder("");
         String currentDay = getCurrentDay(day);
 
-        db.getWeek(currentDay).forEach(week -> {
-            if(week != null) {
-                lessons.append(week.getSubject()).append(" ")
-                        .append(week.getFromTime())
-                        .append(" - ")
-                        .append(week.getToTime()).append(" ")
-                        .append(week.getRoom())
-                        .append("\n");
+        db.getWeek(currentDay).forEach(new Consumer<Week>() {
+            @Override
+            public void accept(Week week) {
+                if (week != null) {
+                    lessons.append(week.getSubject()).append(" ")
+                            .append(week.getFromTime())
+                            .append(" - ")
+                            .append(week.getToTime()).append(" ")
+                            .append(week.getRoom())
+                            .append("\n");
+                }
             }
         });
 
