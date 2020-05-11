@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IT5M-Squadron-TimeTable.iml" filepath="$PROJECT_DIR$/IT5M-Squadron-TimeTable.iml" group="IT5M-Squadron-TimeTable" />
+      <module fileurl="file://$PROJECT_DIR$/android-studio-IT5M-Squadron-TimeTable.iml" filepath="$PROJECT_DIR$/android-studio-IT5M-Squadron-TimeTable.iml" group="IT5M-Squadron-TimeTable" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="IT5M-Squadron-TimeTable/app" />
     </modules>
   </component>
