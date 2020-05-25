@@ -1,11 +1,11 @@
-package com.ulan.timetable;
+package com.ulan.timetable.activities;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.ulan.timetable.activities.MainActivity;
+import com.ulan.timetable.R;
 
 public class SplashActivity extends AppCompatActivity {
     private static int SPLASH_TIME_OUT = 3000;

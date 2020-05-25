@@ -98,5 +98,8 @@
     <!-- Notification -->
     <string name="notification_title"> Leçons d\'aujourd\'hui </string>
     <string name="do_not_have_lessons">Vous n\'avez pas de cours!</string>
+    <string name="facebook">facebook</string>
+    <string name="twitter">twitter</string>
+    <string name="Team_Squadron">Team_Squadron</string>
 
 </resources>

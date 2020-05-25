@@ -30,6 +30,6 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Team_Squadron" />
+        android:text="team_squadron@gmail.com" />
 
 </LinearLayout>

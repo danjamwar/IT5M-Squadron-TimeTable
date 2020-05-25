@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">TimeTable</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -28,6 +28,7 @@
     <string name="delete">Delete</string>
     <string name="edit">Edit</string>
     <string name="school_website">School website</string>
+    <string name="team_squadron_gmail_com" translatable="false">team_squadron@gmail.com</string>
     <string name="school_website_snackbar">Please, set URL of your school website in settings.</string>
 
     <string name="add_subject">Add subject</string>
@@ -98,8 +99,10 @@
     <!-- Notification -->
     <string name="notification_title">Today\'s lessons</string>
     <string name="do_not_have_lessons">You do not have lessons!</string>
-    <string name="veenu_0906mov_gmail_com">veenu.0906@gmail.com</string>
-    <string name="Team_Squadron_mov_gmail_com">Team_Squadron</string>
-    <string name="Team_Squadron">Team_Squadron@gmail.com</string>
+
+    <string name="facebook">facebook</string>
+    <string name="twitter">twitter</string>
+    <string name="Team_Squadron">Team_Squadron</string>
+
 
 </resources>

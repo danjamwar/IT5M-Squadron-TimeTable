@@ -4,6 +4,7 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -183,26 +184,44 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     Snackbar.make(navigationView, R.string.school_website_snackbar, Snackbar.LENGTH_SHORT).show();
                 }
                 return true;
+
+            case R.id.fb_menu:
+                Uri fb = Uri.parse("https://www.facebook.com/");
+                Intent fbIntent = new Intent(Intent.ACTION_VIEW, fb);
+                startActivity(fbIntent);
+                return true;
+
+            case R.id.twitter_menu:
+                Uri twit = Uri.parse("https://twitter.com/");
+                Intent twitIntent = new Intent(Intent.ACTION_VIEW, twit);
+                startActivity(twitIntent);
+                return true;
+
             case R.id.exams:
                 Intent exams = new Intent(MainActivity.this, ExamsActivity.class);
                 startActivity(exams);
                 return true;
+
             case R.id.teachers:
                 Intent teacher = new Intent(MainActivity.this, TeachersActivity.class);
                 startActivity(teacher);
                 return true;
+
             case R.id.homework:
                 Intent homework = new Intent(MainActivity.this, HomeworksActivity.class);
                 startActivity(homework);
                 return true;
+
             case R.id.notes:
                 Intent note = new Intent(MainActivity.this, NotesActivity.class);
                 startActivity(note);
                 return true;
+
             case R.id.settings:
                 Intent settings = new Intent(MainActivity.this, SettingsActivity.class);
                 startActivity(settings);
                 return true;
+
             default:
                 DrawerLayout drawer = findViewById(R.id.drawer_layout);
                 drawer.closeDrawer(GravityCompat.START);
